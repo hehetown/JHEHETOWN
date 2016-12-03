@@ -231,12 +231,14 @@
 				<groupId>javax.servlet</groupId>
 				<artifactId>javax.servlet-api</artifactId>
 				<version>${servlet-api.version}</version>
+				<scope>provided</scope>
 			</dependency>
 			<!-- jsp servlet jstl -->
 			<dependency>
 				<groupId>javax.servlet.jsp</groupId>
 				<artifactId>jsp-api</artifactId>
 				<version>${jsp-api.version}</version>
+				<scope>provided</scope>
 				<exclusions>
 					<exclusion>
 						<groupId>javax.servlet</groupId>
@@ -248,6 +250,7 @@
 				<groupId>javax.servlet</groupId>
 				<artifactId>jstl</artifactId>
 				<version>${jstl.version}</version>
+				<scope>provided</scope>
 			</dependency>
 
 			<!-- 辅助依赖库 start -->
@@ -297,7 +300,7 @@
 
 			<!-- MyBatis start -->
 			<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
-			
+
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
@@ -345,12 +348,14 @@
 				<version>${mysql.driver.version}</version>
 				<scope>runtime</scope>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/ojdbc/ojdbc -->
 			<dependency>
-				<groupId>com.oracle</groupId>
-				<artifactId>ojdbc14</artifactId>
-				<version>${oracle.driver.version}</version>
-				<scope>runtime</scope>
+				<groupId>ojdbc</groupId>
+				<artifactId>ojdbc</artifactId>
+				<version>${ojdbc.version}</version>
 			</dependency>
+
+
 			<!-- jTDS is an open source 100% pure Java (type 4) JDBC 3.0 driver for 
 				Microsoft SQL Server (6.5, 7, 2000, 2005, 2008, 2012) and Sybase ASE (10, 
 				11, 12, 15). jTDS is based on FreeTDS and is currently the fastest production-ready 
@@ -612,9 +617,9 @@
 			<!-- PDF start -->
 			<!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
 			<dependency>
-			    <groupId>com.itextpdf</groupId>
-			    <artifactId>itextpdf</artifactId>
-			    <version>${version.itextpdf}</version>
+				<groupId>com.itextpdf</groupId>
+				<artifactId>itextpdf</artifactId>
+				<version>${version.itextpdf}</version>
 			</dependency>
 
 			<!-- PDF end -->
